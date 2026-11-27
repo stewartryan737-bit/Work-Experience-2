@@ -6,7 +6,7 @@ export default function Dialog({ title, onClose, children, footer }) {
   useEffect(() => {
     function onKey(event) {
       if (event.key === "Escape") onClose();
-    }
+    } 
     document.addEventListener("keydown", onKey);
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
